@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "51417bb6-e315-4428-81a4-95d4ed8590a8",
+		"name": "Pruebas GWS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23993979"
+	},
+	"item": [
+		{
+			"name": "290 - Santander-estado-de-cuenta",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:red=\"redpagos\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <red:Transformador.Execute>\r\n         <red:Requestid>ngw-servicios-test-santander-ecuenta</red:Requestid>\r\n         <red:Ambiente>P</red:Ambiente>\r\n         <red:Transformadororigen>S</red:Transformadororigen>\r\n         <red:Transformadororigenid>290</red:Transformadororigenid>\r\n         <red:Operaciononlineid>b3208f30-d1da-11e6-8498-005056b67a14</red:Operaciononlineid>\r\n         <red:Mensajexmlin>\r\n            <red:Mensaje><![CDATA[<oMensaje def=\"401260f0-d1de-11e6-8498-005056b67a14\">\r\n    <Estado-Cuenta-Consulta-Entrada>\r\n        <TipoDocumento>04</TipoDocumento>\r\n        <Documento>134001077996</Documento>\r\n    </Estado-Cuenta-Consulta-Entrada>\r\n</oMensaje>]]></red:Mensaje>\r\n         </red:Mensajexmlin>\r\n      </red:Transformador.Execute>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1999 - RECARGA TELECARD",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:red=\"redpagos\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <red:Transformador.Execute>\r\n         <red:Requestid>ngw-servicios-test-Recarga-universal-Hogares-ADS-PrePago</red:Requestid>\r\n         <red:Ambiente>P</red:Ambiente>\r\n         <red:Transformadororigen>S</red:Transformadororigen>\r\n         <red:Transformadororigenid>1999</red:Transformadororigenid>\r\n         <red:Operaciononlineid>1f77eb90-25d4-11ec-b0b0-00505629a27b</red:Operaciononlineid>\r\n         <red:Mensajexmlin>\r\n            <red:Mensaje>\r\n\t\t\t<![CDATA[<oMensaje def=\"10f23a40-25d3-11ec-b0b0-00505629a27b\">\r\n    <consultarEstadoTransaccion>\r\n        <CodigoAgente></CodigoAgente>\r\n        <IdTranAgente></IdTranAgente>\r\n    </consultarEstadoTransaccion>\r\n</oMensaje>]]>\r\n\t\t</red:Mensaje>\r\n         </red:Mensajexmlin>\r\n      </red:Transformador.Execute>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2455 - RECARGA TELEFONIA FIJA",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:red=\"redpagos\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <red:Transformador.Execute>\r\n         <red:Requestid>ngw-servicios-test-Recarga-universal-Hogares-ADS-PrePago</red:Requestid>\r\n         <red:Ambiente>P</red:Ambiente>\r\n         <red:Transformadororigen>S</red:Transformadororigen>\r\n         <red:Transformadororigenid>2455</red:Transformadororigenid>\r\n         <red:Operaciononlineid>1f77eb90-25d4-11ec-b0b0-00505629a27b</red:Operaciononlineid>\r\n         <red:Mensajexmlin>\r\n            <red:Mensaje>\r\n\t\t\t<![CDATA[<oMensaje def=\"10f23a40-25d3-11ec-b0b0-00505629a27b\">\r\n    <consultarEstadoTransaccion>\r\n        <CodigoAgente></CodigoAgente>\r\n        <IdTranAgente></IdTranAgente>\r\n    </consultarEstadoTransaccion>\r\n</oMensaje>]]>\r\n\t\t</red:Mensaje>\r\n         </red:Mensajexmlin>\r\n      </red:Transformador.Execute>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5002 - CREDITO DE LA CASA COBRANZA DE CUOTAS CON1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:red=\"redpagos\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <red:Transformador.Execute> \r\n         <red:Requestid>ngw-servicios-test-CREDITO-DE-LA-CASA-COBRANZA-DE-CUOTAS-CON1</red:Requestid>\r\n         <red:Ambiente>P</red:Ambiente>\r\n         <red:Transformadororigen>S</red:Transformadororigen>\r\n         <red:Transformadororigenid>5002</red:Transformadororigenid>\r\n         <red:Operaciononlineid>d6656150-e22f-11ea-8118-00505629a27b</red:Operaciononlineid>\r\n         <red:Mensajexmlin>\r\n            <red:Mensaje><![CDATA[\r\n\t\t\t\t<oMensaje def=\"276f4cc0-e22e-11ea-8118-00505629a27b\">\r\n\t\t\t\t    <consultacredito>\r\n\t\t\t\t        <Documento>70000006</Documento>\r\n\t\t\t\t    </consultacredito>\r\n\t\t\t\t</oMensaje>\r\n]]></red:Mensaje>\r\n         </red:Mensajexmlin>\r\n      </red:Transformador.Execute>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status test\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://ngw-servicios1:8080/nummi.gateway.servicios-transformador/servlet/atransformador",
+			"type": "string"
+		}
+	]
+}
